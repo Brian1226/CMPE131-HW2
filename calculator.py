@@ -6,6 +6,9 @@ number1
 number2
 operator : does operation if inputs are "+", "-", "*", "/", "//", "**", "%"
 
+Returns:
+output : result of oepration
+
 Example:
 number1 = 20
 number2 = 10
