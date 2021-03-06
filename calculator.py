@@ -1,3 +1,25 @@
+""""
+Gets user input of 2 integers and operators, and printing out result
+
+calculator() takes 3 arguments:
+number1
+number2
+operator : does operation if inputs are "+", "-", "*", "/", "//", "**", "%"
+
+Example:
+number1 = 20
+number2 = 10
+operator = "+"
+return output = 30
+
+input_output() gets user input for for number1, number2, and operator. It calls on the calculator() to perform the math
+Then it asks if want to coninue or exit program.
+
+"n" = if user input "n", the program continues asking questions
+"y" = program breaks / exit out
+
+"""
+
 def calculator(number1, number2, operator):
   
   if operator == "+":
@@ -35,4 +57,5 @@ def input_output():
     if next == "y":
       break
     
+
 
