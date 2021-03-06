@@ -4,7 +4,7 @@ def calculate_time(func):
   def wrapper():
     current = time.time()
     func()
-    print(int(time.time() - current))
+    print(f'Total time {time.time() - current}')
   return wrapper
 
 @calculate_time
