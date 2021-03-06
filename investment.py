@@ -27,15 +27,8 @@ def calculate_apr(principal, interest_rate, years):
   if isinstance(years, int):
     for i in range(years):
       total = total + (principal * (1 + interest_rate))
-
-  #if any of the parameters is negative return False
-  if principal < 0:
-    return False
-  elif interest_rate < 0:
-    return False
-  elif years < 0:
-    return False
   else:
-    print(total)
+    return False
+  print(total)
 
-calculate_apr(500, 2.5, 2)
+
