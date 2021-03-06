@@ -38,5 +38,3 @@ def calculate_apr(principal, interest_rate, years):
   print(total)
   return total
 
-
-calculate_apr(500, 0.03, 65)
