@@ -1,13 +1,15 @@
 import time
 
+current_time = time.time()
+
 def calculate_time(func):
   def wrapper():
-    current_time = time.time()
+    
     func()
-    print(current_time)
   return wrapper
 
 @calculate_time
-def sleep():
-  time.sleep(2)
-  print(time) 
+def time_sleep():
+  print(current_time)
+
+
