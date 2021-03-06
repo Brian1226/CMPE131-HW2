@@ -36,6 +36,7 @@ def calculate_apr(principal, interest_rate, years):
   else:
     return False
   print(total)
+  return total
 
 
 calculate_apr(500, 2.5, 2)
