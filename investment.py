@@ -30,9 +30,9 @@ def calculate_apr(principal, interest_rate, years):
     return False
   elif interest_rate < 0:
     return False
-  elif years < 0 or not isinstance(years, int):
+  elif years < 0:
     return False
   else:
     print(total)
 
-calculate_apr(500, 2.5, 2.5)
+
