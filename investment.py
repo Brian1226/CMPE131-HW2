@@ -23,12 +23,7 @@ def calculate_apr(principal, interest_rate, years):
 
   total = 0
   
-  if principal < 0:
-    return False
-  if interest_rate < 0:
-    return False
-  if years < 0:
-    return False
+
   
   if isinstance(years, int) and isinstance(interest_rate, float) and isinstance(principal, int) or isinstance(principal, float):
     for i in range(years):
@@ -39,4 +34,4 @@ def calculate_apr(principal, interest_rate, years):
   return total
 
 
-calculate_apr(500, 2.5, 2)
+calculate_apr(500.2, 0.02, 3)
