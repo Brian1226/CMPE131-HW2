@@ -4,7 +4,7 @@ def calculate_apr(principal, interest_rate, years):
   using the formula principal * (1 + interest_rate)
 
   Parameters:
-  principal : int
+  principal : int or float
   interest_rate : float
   years : int
 
@@ -18,17 +18,19 @@ def calculate_apr(principal, interest_rate, years):
   years = 10
   The total should return 5250.0
 
-  But if any of the parameters is negative, returns False
+  If any of the parameters is negative, returns False
   """
 
   total = 0
   
-  
+  if principal < 0:
+    return False
   if interest_rate < 0:
     return False
-
+  if years < 0:
+    return False
   
-  if isinstance(years, int) and isinstance(interest_rate, float) and isinstance(principal, int) or isinstance(principal, float):
+  if ((isinstance(principal, int) or isinstance(principal, float)) and isinstance(years, int) and isinstance(interest_rate, float)):
     for i in range(years):
       total = total + (principal * (1 + interest_rate))
   else:
@@ -37,3 +39,4 @@ def calculate_apr(principal, interest_rate, years):
   return total
 
 
+calculate_apr(500, 0.03, 65)
