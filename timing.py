@@ -7,6 +7,9 @@ Parameters:
 initial_time : the time before the sleep (float)
 final_time : the time used after the sleep (float)
 
+Returns:
+total_time : the time difference between inital and final
+
 Example:
 inital_time = 1615015080.3982704
 final_time = 1615015082.400343
