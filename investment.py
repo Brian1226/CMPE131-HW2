@@ -27,7 +27,7 @@ def calculate_apr(principal, interest_rate, years):
   if years < 0:
     return False
   
-  if isinstance(years, int) and isinstance(interest_rate, float) and (isinstance(principal, int) or isinstance(principal, float)):
+  if isinstance(years, int) and isinstance(interest_rate, float):
     for i in range(years):
       principal = principal * (1 + interest_rate)
   return principal
