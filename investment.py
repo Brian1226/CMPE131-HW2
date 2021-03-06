@@ -38,4 +38,3 @@ def calculate_apr():
   else:
     print(total)
   
-calculate_apr()
