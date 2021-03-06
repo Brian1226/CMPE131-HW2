@@ -4,7 +4,7 @@ def calculate_apr():
   using the formula principal * (1 + interest_rate)
 
   Parameters:
-  principal : int
+  principal : float
   interest_rate : float
   years : int
 
@@ -21,7 +21,7 @@ def calculate_apr():
   But if any of the parameters is negative, returns False
   """
   #make sure that principal and years is input is int, and interest_rate input is float
-  principal = int(input()) 
+  principal = float(input()) 
   interest_rate = float(input())
   years = int(input())
   total = 0
