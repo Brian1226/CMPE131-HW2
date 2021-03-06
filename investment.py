@@ -24,19 +24,17 @@ def calculate_apr():
   principal = float(input()) 
   interest_rate = float(input())
   years = int(input())
+  total = 0
+  for i in range(years):
+    total = total + (principal * (1 + interest_rate))
 
+  #if any of the parameters is negative return False
   if principal < 0:
     return False
   elif interest_rate < 0:
     return False
   elif years < 0:
     return False
-
-
-  total = 0
-  for i in range(years):
-    total = total + (principal * (1 + interest_rate))
-
-  #if any of the parameters is negative return False
-  print(total)
+  else:
+    print(total)
 
